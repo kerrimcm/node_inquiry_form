@@ -16,3 +16,28 @@ fs.readFile('./index.html', function (err, html) {
       console.log(`Server running at http://${hostname}:${port}/`);
   });
 });
+
+let data = "Learning how to write in a file."
+  
+fs.writeFile('Output.txt', data, (err) => { 
+  if (err) throw err; 
+  console.log(data);
+}) 
+
+function WriteToFile(passForm) {
+  var fso = CreateObject("Scripting.FileSystemObject"); 
+  var s = fso.CreateTextFile("<your Path>/filename.txt", True);
+   
+  var name = document.getElementById('name');
+  var email  = document.getElementById('email');
+  var message  = document.getElementById('message');
+  var checkbox = document.getElementById('checkbox');
+   
+  s.writeline("Name :" + name);
+  s.writeline("Email :" + email);
+  s.writeline("Message :" + message);
+  s.writeline("Subscribed :" + checkbox);
+  s.writeline("-----------------------------");
+  s.Close();
+}
+
