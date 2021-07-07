@@ -1,0 +1,11 @@
+{
+  "name": "meater_tech_test",
+  "version": "1.0.0",
+  "description": "Tasty Treats Local Bakery  _____ Capture information and save in plain text files - Name - Email address - Message  - Subscribe to newsletter Served using NodeJS Can use libraries and frameworks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
