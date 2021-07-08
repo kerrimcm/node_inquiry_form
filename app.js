@@ -13,7 +13,7 @@ const server = http.createServer((req, res) => {
       body += chunk.toString()
   })
   req.on('end', () => {
-    let userData = body.replace('name=', '').replace('email=', '').replace('message=', '').replace('submit=Sumbit', '').replace('inquiry', '').replace('%40', '@').replaceAll('+', ' ').replaceAll('&', ' ') + '\n'
+    let userData = body.replace('name=', 'Name: ').replace('email=', 'Email address: ').replace('message=', 'Inquiry: ').replace('submit=Sumbit', '').replace('inquiry', '').replace('%40', '@').replaceAll('+', ' ').replaceAll('&', ' ') + '\n'
     fs.appendFile('userData.txt', userData, (err) => {
       if(err){
         throw err
