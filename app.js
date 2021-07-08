@@ -10,10 +10,10 @@ const server = http.createServer((req, res) => {
   if(req.method === "POST") {
     let body = ""
     req.on('data', chunk => {
-      body += chunk.toString();
+      body += chunk.toString()
   })
   req.on('end', () => {
-    let userData = body + '\n'
+    let userData = body.replace('name=', '').replace('email=', '').replace('message=', '').replace('submit=Sumbit', '').replace('inquiry', '').replace('%40', '@').replaceAll('+', ' ').replaceAll('&', ' ') + '\n'
     fs.appendFile('userData.txt', userData, (err) => {
       if(err){
         throw err
