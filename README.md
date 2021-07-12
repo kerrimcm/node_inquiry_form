@@ -12,8 +12,8 @@ This is served using pure NodeJS without the use of any frameworks or libraries.
 
 ## Getting started
 * `git clone` this repo
-* Ensure you have NodeJS installed, if not, install node from [their site](https://nodejs.org/en/)
-* You can check if you have node installed by running `node -v`
+* Ensure you have NodeJS installed, if not, install it from [their site](https://nodejs.org/en/)
+* You can check if you have NodeJS installed by running `node -v`
 * Run the command `node app.js` 
 * Click/copy the link in the terminal http://127.0.0.1:3000 to visit the form
 
