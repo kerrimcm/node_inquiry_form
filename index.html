@@ -1,19 +1,26 @@
-<h1>Enquire with Tasty Treats</h1>
+<head>
+  <title>Tasty Treats</title>
+  <style>
+    h1 { text-align: center; font-family: Arial, Helvetica, sans-serif; margin-top: 20px; } 
+  </style>
+</head>
 
-<form method="POST" action="/">
-  <label for="name">Full name</label>
-  <input type="text" name="name" id="name">
-  <br>
-  <label for="email">Email address</label>
-  <input type="email" name="email" id="email">
-  <br>
-  <label for="message">Details of your inquiry</label>
-  <textarea name="message" id="message" cols="30" rows="10"></textarea>
-  <br>
-  <label for="subscribe">Subscribe to Tasty Treats' newsletter?</label>
-  <input type="checkbox" name="subscribe" id="checkbox">
-  <br>
-  <input type="submit" name="submit" value="Sumbit inquiry">
-</form>
+<div class="background">
+  <h1>Enquire with Tasty Treats</h1>
 
-<script src="./app.js"></script>
+  <form method="POST" action="/">
+    <label for="name">Full name</label>
+    <input type="text" name="name" id="name">
+    <br>
+    <label for="email">Email address</label>
+    <input type="email" name="email" id="email">
+    <br>
+    <label for="message">Details of your inquiry</label>
+    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+    <br>
+    <label for="subscribe">Subscribe to Tasty Treats' newsletter?</label>
+    <input type="checkbox" name="subscribe" id="checkbox">
+    <br>
+    <input type="submit" name="submit" value="Sumbit inquiry">
+  </form>
+</div>
