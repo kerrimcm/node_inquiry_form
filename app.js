@@ -1,6 +1,5 @@
 const http = require('http');
 const fs = require('fs');
-const url = require('url');
 
 const server = http.createServer((req, res) => {
   fs.readFile('index.html', (err,data) => {
@@ -14,7 +13,7 @@ const server = http.createServer((req, res) => {
       body += chunk.toString()
   })
   req.on('end', () => {
-    let userData = body.replace('name=', 'Name: ').replace('email=', 'Email address: ').replace('message=', 'Inquiry: ').replace('submit=Sumbit', '').replace('inquiry', '').replace('%40', '@').replaceAll('+', ' ').replaceAll('&', ' ') + '\n'
+    let userData = body.replace('name=', 'Name: ').replace('email=', 'Email address: ').replace('message=', 'Inquiry message: ').replace('submit=Sumbit', '').replace('inquiry', '').replace('%40', '@').replaceAll('+', ' ').replaceAll('&', ' ') + '\n'
     fs.appendFile('userData.txt', userData, (err) => {
       if(err){
         throw err
