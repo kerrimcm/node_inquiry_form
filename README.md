@@ -1,6 +1,6 @@
-# Tasty Treats Local Bakery Inquiry Form
+# Node.js Inquiry Form
 _____
-An inquiry form created for local business owner, Terence, to capture the following information from his curious customers:
+An inquiry form capturing the following information:
 - Name
 - Email address
 - Message 
